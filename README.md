@@ -12,17 +12,42 @@
 |ZW440|444M|99.76+|97.30+|97.40+|95.25+|96.00+|已开源
 
 ## Megafce测试结果图
-![zw440-id](https://github.com/olojuwin/facerecognize-for-mobile-phone/tree/master/img/zw443m-ID.jpg)
+zw440-id
+![zw440-id](https://raw.githubusercontent.com/olojuwin/facerecognize-for-mobile-phone/master/img/zw443m-ID.jpg)
 
+![zw440-ver](https://raw.githubusercontent.com/olojuwin/facerecognize-for-mobile-phone/master/img/zw443m-ver.jpg)
+
+zw440-ver
+
+
+## 速度比对测试
+### 设备：i5-6500(暂时没有移动设备测试)
+|Methods|Openvino|opencv单线程|
+|:----|:----|:-----|
+|MobileFaceNet600,R|6ms|141ms|
+|ZW440|7ms|80ms
+
+### 移动设备
+经过测试，zw440并没有Mobilefacenet600M快.感谢[moli](https://github.com/moli232777144)的测试
 
 
 ## 模型地址
 模型包含mxnet ncnn  caffe 三种格式
-[BaiDu](https://pan.baidu.com/s/1E27uWe4deWsE0va1u1LhrQ)   提取码：b0dm 
+[Baidu Drive](https://pan.baidu.com/s/1E27uWe4deWsE0va1u1LhrQ)   提取码：b0dm 
 
 
+## 训练数据
+https://github.com/deepinsight/insightface/tree/master/iccv19-challenge
+
+## 参考项目
+https://github.com/deepinsight/insightface
+
+https://github.com/happynear/FaceVerification
+
+https://github.com/Tencent/ncnn
+
+https://github.com/cypw/MXNet2Caffe
 
 ## Todo
 
-readme太难写了，相关链接稍后放出，先放模型链接
-
+没有做速度方面考虑，后期跟进改善。
